@@ -112,7 +112,15 @@ namespace WindowsFormsApp
 
         private void btn_HRoom10_Click(object sender, EventArgs e)
         {
-            showReservationInfo(10);
+            if (((MouseEventArgs) e).Button == System.Windows.Forms.MouseButtons.Right)
+            {
+                MessageBox.Show("Room1");
+            }
+            else
+            {
+                showReservationInfo(10);
+            }
+            
         }
 
         private void showReservationInfo(int room)
@@ -162,6 +170,23 @@ namespace WindowsFormsApp
         private void roomIsFull(int room)
         {
             ((Button)buttonList[room-1]).BackColor= Color.Red;
+        }
+
+        private void btn_HRoom3_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == System.Windows.Forms.MouseButtons.Right)
+            {
+                MessageBox.Show("Room3");
+            }
+        }
+
+        private void btn_Room_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == System.Windows.Forms.MouseButtons.Right)
+            {
+                RoomCalendar rc = new RoomCalendar(((Button)sender).Name.Replace("btn_HRoom", ""));
+                rc.ShowDialog();
+            }
         }
 
         private void roomIsEmpty(int room)
