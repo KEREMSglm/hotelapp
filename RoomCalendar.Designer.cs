@@ -30,49 +30,54 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.labelRoomNo = new System.Windows.Forms.Label();
-            this.monthCalendar = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(259, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(145, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Room No :";
             // 
             // labelRoomNo
             // 
             this.labelRoomNo.AutoSize = true;
-            this.labelRoomNo.Location = new System.Drawing.Point(78, 13);
+            this.labelRoomNo.BackColor = System.Drawing.Color.White;
+            this.labelRoomNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelRoomNo.Location = new System.Drawing.Point(407, 0);
             this.labelRoomNo.Name = "labelRoomNo";
-            this.labelRoomNo.Size = new System.Drawing.Size(52, 13);
+            this.labelRoomNo.Size = new System.Drawing.Size(133, 30);
             this.labelRoomNo.TabIndex = 1;
             this.labelRoomNo.Text = "...............";
             // 
-            // monthCalendar
+            // monthCalendar1
             // 
-            this.monthCalendar.BoldedDates = new System.DateTime[] {
-        new System.DateTime(2023, 12, 1, 0, 0, 0, 0),
-        new System.DateTime(2023, 12, 29, 0, 0, 0, 0)};
-            this.monthCalendar.CalendarDimensions = new System.Drawing.Size(3, 4);
-            this.monthCalendar.Location = new System.Drawing.Point(42, 48);
-            this.monthCalendar.Name = "monthCalendar";
-            this.monthCalendar.TabIndex = 3;
-            this.monthCalendar.TitleBackColor = System.Drawing.Color.Red;
-            this.monthCalendar.TitleForeColor = System.Drawing.Color.Red;
-            this.monthCalendar.TrailingForeColor = System.Drawing.Color.Yellow;
-            this.monthCalendar.UseWaitCursor = true;
+            this.monthCalendar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(3, 4);
+            this.monthCalendar1.CausesValidation = false;
+            this.monthCalendar1.ForeColor = System.Drawing.Color.Red;
+            this.monthCalendar1.Location = new System.Drawing.Point(-4, 0);
+            this.monthCalendar1.MaxSelectionCount = 366;
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.ShowToday = false;
+            this.monthCalendar1.ShowTodayCircle = false;
+            this.monthCalendar1.TabIndex = 4;
+            this.monthCalendar1.TabStop = false;
+            this.monthCalendar1.TodayDate = new System.DateTime(((long)(0)));
             // 
             // RoomCalendar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 683);
-            this.Controls.Add(this.monthCalendar);
+            this.ClientSize = new System.Drawing.Size(701, 587);
             this.Controls.Add(this.labelRoomNo);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.monthCalendar1);
             this.Name = "RoomCalendar";
             this.Text = "RoomCalendar";
             this.ResumeLayout(false);
@@ -84,6 +89,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelRoomNo;
-        private System.Windows.Forms.MonthCalendar monthCalendar;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }
