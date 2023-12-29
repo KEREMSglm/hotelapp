@@ -234,6 +234,12 @@
     <Compile Include="RECORD.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RoomCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomCalendar.Designer.cs">
+      <DependentUpon>RoomCalendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Soundapp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -270,6 +276,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RoomCalendar.resx">
+      <DependentUpon>RoomCalendar.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="OpenTK.dll.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

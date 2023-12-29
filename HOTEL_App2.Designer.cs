@@ -197,6 +197,7 @@ namespace WindowsFormsApp
             this.btn_HRoom10.TabIndex = 1;
             this.btn_HRoom10.UseVisualStyleBackColor = true;
             this.btn_HRoom10.Click += new System.EventHandler(this.btn_HRoom10_Click);
+            this.btn_HRoom10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_Room_MouseDown);
             // 
             // label_room_10
             // 
@@ -241,6 +242,7 @@ namespace WindowsFormsApp
             this.btn_HRoom9.TabIndex = 1;
             this.btn_HRoom9.UseVisualStyleBackColor = true;
             this.btn_HRoom9.Click += new System.EventHandler(this.btn_HRoom9_Click);
+            this.btn_HRoom9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_Room_MouseDown);
             // 
             // label_room_9
             // 
@@ -285,6 +287,7 @@ namespace WindowsFormsApp
             this.btn_HRoom8.TabIndex = 1;
             this.btn_HRoom8.UseVisualStyleBackColor = true;
             this.btn_HRoom8.Click += new System.EventHandler(this.btn_HRoom8_Click);
+            this.btn_HRoom8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_Room_MouseDown);
             // 
             // label_room_8
             // 
@@ -329,6 +332,7 @@ namespace WindowsFormsApp
             this.btn_HRoom7.TabIndex = 1;
             this.btn_HRoom7.UseVisualStyleBackColor = true;
             this.btn_HRoom7.Click += new System.EventHandler(this.btn_HRoom7_Click);
+            this.btn_HRoom7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_Room_MouseDown);
             // 
             // label_room_7
             // 
@@ -385,6 +389,7 @@ namespace WindowsFormsApp
             this.btn_HRoom6.TabIndex = 1;
             this.btn_HRoom6.UseVisualStyleBackColor = true;
             this.btn_HRoom6.Click += new System.EventHandler(this.btn_HRoom6_Click);
+            this.btn_HRoom6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_Room_MouseDown);
             // 
             // tableLayoutPanel7
             // 
@@ -417,6 +422,7 @@ namespace WindowsFormsApp
             this.btn_HRoom5.TabIndex = 1;
             this.btn_HRoom5.UseVisualStyleBackColor = true;
             this.btn_HRoom5.Click += new System.EventHandler(this.btn_HRoom5_Click);
+            this.btn_HRoom5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_Room_MouseDown);
             // 
             // label_room_5
             // 
@@ -461,6 +467,7 @@ namespace WindowsFormsApp
             this.btn_HRoom4.TabIndex = 1;
             this.btn_HRoom4.UseVisualStyleBackColor = true;
             this.btn_HRoom4.Click += new System.EventHandler(this.btn_HRoom4_Click);
+            this.btn_HRoom4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_Room_MouseDown);
             // 
             // label_room_4
             // 
@@ -517,6 +524,7 @@ namespace WindowsFormsApp
             this.btn_HRoom3.TabIndex = 1;
             this.btn_HRoom3.UseVisualStyleBackColor = true;
             this.btn_HRoom3.Click += new System.EventHandler(this.btn_HRoom3_Click);
+            this.btn_HRoom3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_Room_MouseDown);
             // 
             // tableLayoutPanel4
             // 
@@ -561,6 +569,7 @@ namespace WindowsFormsApp
             this.btn_HRoom2.TabIndex = 1;
             this.btn_HRoom2.UseVisualStyleBackColor = true;
             this.btn_HRoom2.Click += new System.EventHandler(this.btn_HRoom2_Click);
+            this.btn_HRoom2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_Room_MouseDown);
             // 
             // tableLayoutPanel1
             // 
@@ -593,6 +602,7 @@ namespace WindowsFormsApp
             this.btn_HRoom1.TabIndex = 1;
             this.btn_HRoom1.UseVisualStyleBackColor = true;
             this.btn_HRoom1.Click += new System.EventHandler(this.btn_HRoom1_Click);
+            this.btn_HRoom1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_Room_MouseDown);
             // 
             // label_room_1
             // 
