@@ -30,14 +30,14 @@
         {
             this.app0_frm_pnl1_HOTEL = new System.Windows.Forms.Panel();
             this.frm_pnl1_tblp1_HOTEL = new System.Windows.Forms.TableLayoutPanel();
+            this.img_Header = new System.Windows.Forms.PictureBox();
             this.frm_pnl1_tblp2_HOTEL = new System.Windows.Forms.TableLayoutPanel();
             this.btn_Header = new System.Windows.Forms.Button();
             this.txt_Search = new System.Windows.Forms.TextBox();
-            this.img_Header = new System.Windows.Forms.PictureBox();
             this.app0_frm_pnl1_HOTEL.SuspendLayout();
             this.frm_pnl1_tblp1_HOTEL.SuspendLayout();
-            this.frm_pnl1_tblp2_HOTEL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Header)).BeginInit();
+            this.frm_pnl1_tblp2_HOTEL.SuspendLayout();
             this.SuspendLayout();
             // 
             // app0_frm_pnl1_HOTEL
@@ -71,6 +71,17 @@
             this.frm_pnl1_tblp1_HOTEL.Size = new System.Drawing.Size(1095, 605);
             this.frm_pnl1_tblp1_HOTEL.TabIndex = 0;
             // 
+            // img_Header
+            // 
+            this.img_Header.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.img_Header.Image = global::WindowsFormsApp.Properties.Resources._1496677256_3_84637;
+            this.img_Header.Location = new System.Drawing.Point(369, 67);
+            this.img_Header.Name = "img_Header";
+            this.img_Header.Size = new System.Drawing.Size(358, 294);
+            this.img_Header.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_Header.TabIndex = 0;
+            this.img_Header.TabStop = false;
+            // 
             // frm_pnl1_tblp2_HOTEL
             // 
             this.frm_pnl1_tblp2_HOTEL.ColumnCount = 3;
@@ -97,27 +108,19 @@
             this.btn_Header.Size = new System.Drawing.Size(65, 60);
             this.btn_Header.TabIndex = 9;
             this.btn_Header.UseVisualStyleBackColor = false;
-            this.btn_Header.Click += new System.EventHandler(this.btn_Header_Click);
+            this.btn_Header.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mic_MouseDown);
+            this.btn_Header.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mic_MouseUp);
             // 
             // txt_Search
             // 
+            this.txt_Search.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txt_Search.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Search.Enabled = false;
             this.txt_Search.Location = new System.Drawing.Point(369, 367);
             this.txt_Search.Multiline = true;
             this.txt_Search.Name = "txt_Search";
             this.txt_Search.Size = new System.Drawing.Size(358, 32);
             this.txt_Search.TabIndex = 1;
-            // 
-            // img_Header
-            // 
-            this.img_Header.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.img_Header.Image = global::WindowsFormsApp.Properties.Resources._1496677256_3_84637;
-            this.img_Header.Location = new System.Drawing.Point(369, 67);
-            this.img_Header.Name = "img_Header";
-            this.img_Header.Size = new System.Drawing.Size(358, 294);
-            this.img_Header.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img_Header.TabIndex = 0;
-            this.img_Header.TabStop = false;
             // 
             // HOTEL_App0
             // 
@@ -131,8 +134,8 @@
             this.app0_frm_pnl1_HOTEL.ResumeLayout(false);
             this.frm_pnl1_tblp1_HOTEL.ResumeLayout(false);
             this.frm_pnl1_tblp1_HOTEL.PerformLayout();
-            this.frm_pnl1_tblp2_HOTEL.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.img_Header)).EndInit();
+            this.frm_pnl1_tblp2_HOTEL.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
