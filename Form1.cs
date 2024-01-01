@@ -276,13 +276,13 @@ namespace WindowsFormsApp
                 
         }
 
-        private void mic_MouseDown(object sender, MouseEventArgs e)
+        public void mic_MouseDown(object sender, MouseEventArgs e)
         {
             btn_Mic.BackColor=Color.Green;
             Speech.getInstance().start();
         }
 
-        private void mic_MouseUp(object sender, MouseEventArgs e)
+        public void mic_MouseUp(object sender, MouseEventArgs e)
         {
             btn_Mic.BackColor = micBtnColor;
             Speech s = Speech.getInstance();
@@ -291,17 +291,28 @@ namespace WindowsFormsApp
 
             txt_Search.Text=text;
 
-            if (text.ToLower().Trim().Equals("rezervasyon"))
+            if (text.ToLower().Trim().Replace(" ","").Equals("rezervasyon"))
             {
                 btn_Costommer_Add_Click(null, null);
             }
-            else if (text.ToLower().Trim().Equals("liste"))
+            else if (text.ToLower().Trim().Replace(" ", "").Equals("liste"))
             {
                 btn_Costomer_List_Click(null, null);
             }
-            else if (text.ToLower().Trim().Equals("odalar"))
+            else if (text.ToLower().Trim().Replace(" ", "").Equals("odalar"))
             {
                 btn_Costommer_Path_Click(null, null);
+            }
+            else if (text.ToLower().Trim().Replace(" ", "").IndexOf("oda") == 0)  
+            {
+                    string room=text.ToLower().Trim().Replace(" ", "").Replace("oda", "");
+                    int result;
+                    bool isNumeric = int.TryParse(room, out result);//
+                    if (isNumeric)
+                    {
+                        RoomCalendar r = new RoomCalendar(room);
+                        r.ShowDialog();
+                    }
             }
         }
     }
