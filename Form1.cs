@@ -303,16 +303,30 @@ namespace WindowsFormsApp
             {
                 btn_Costommer_Path_Click(null, null);
             }
-            else if (text.ToLower().Trim().Replace(" ", "").IndexOf("oda") == 0)  
+            else if (
+                text.ToLower().Trim().Replace(" ", "").IndexOf("oda") == 0
+                || text.ToLower().Trim().Replace(" ", "").IndexOf("odabir") == 0
+                || text.ToLower().Trim().Replace(" ", "").IndexOf("odayedi") == 0
+                )
             {
-                    string room=text.ToLower().Trim().Replace(" ", "").Replace("oda", "");
-                    int result;
-                    bool isNumeric = int.TryParse(room, out result);//
-                    if (isNumeric)
-                    {
-                        RoomCalendar r = new RoomCalendar(room);
-                        r.ShowDialog();
-                    }
+                string room=text.ToLower().Trim().Replace(" ", "").Replace("oda", "");
+                int result;
+                bool isNumeric = int.TryParse(room, out result);//
+                if (isNumeric)
+                {
+                    RoomCalendar r = new RoomCalendar(room);
+                    r.ShowDialog();
+                }
+                else if (room.Equals("bir"))
+                {
+                    RoomCalendar r = new RoomCalendar("1");
+                    r.ShowDialog();
+                }
+                else if (room.Equals("yedi"))
+                {
+                    RoomCalendar r = new RoomCalendar("7");
+                    r.ShowDialog();
+                }
             }
         }
     }
