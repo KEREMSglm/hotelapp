@@ -138,7 +138,20 @@ namespace WindowsFormsApp
         }
 
 
+        public static ArrayList getReservationList(int room)
+        {
+            ArrayList list = new ArrayList();
 
+            foreach (Reservation r in reservationList)
+            {
+                if (r.room.Equals("Room-"+room))
+                {
+                    list.Add(r);
+                }
+            }
+
+            return list;
+        }
 
         public static void WriteToBinaryFile<T>(string filePath, T objectToWrite, bool append = false)
         {
