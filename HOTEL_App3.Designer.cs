@@ -297,7 +297,7 @@
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.7384F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.2616F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 391F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 392F));
             this.tableLayoutPanel5.Controls.Add(this.startDate, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.lbl_Date, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.endDate, 1, 0);
@@ -315,7 +315,7 @@
             this.startDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.startDate.Location = new System.Drawing.Point(120, 3);
             this.startDate.Name = "startDate";
-            this.startDate.Size = new System.Drawing.Size(334, 30);
+            this.startDate.Size = new System.Drawing.Size(333, 30);
             this.startDate.TabIndex = 15;
             // 
             // lbl_Date
@@ -335,9 +335,9 @@
             // 
             this.endDate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.endDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.endDate.Location = new System.Drawing.Point(460, 3);
+            this.endDate.Location = new System.Drawing.Point(459, 3);
             this.endDate.Name = "endDate";
-            this.endDate.Size = new System.Drawing.Size(386, 30);
+            this.endDate.Size = new System.Drawing.Size(387, 30);
             this.endDate.TabIndex = 14;
             // 
             // customerTable
