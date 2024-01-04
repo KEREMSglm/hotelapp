@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar"
+         xml:lang="en-US"
+         version="1.0"
+         mode="voice"
+         root="commands">
+
+	<rule id="commands">
+		<item>reservation</item>
+		<item>list</item>
+		<item>rooms</item>
+	</rule>
+
+</grammar>

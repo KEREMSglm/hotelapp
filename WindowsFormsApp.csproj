@@ -244,6 +244,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Speech.cs" />
+    <Compile Include="SpeechEng.cs" />
     <Compile Include="WRITEWAV.cs" />
     <EmbeddedResource Include="BillForm.resx">
       <DependentUpon>BillForm.cs</DependentUpon>
@@ -311,6 +312,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DefaultCommands.txt" />
+    <Content Include="grammar.xml" />
     <None Include="Resources\pngwing.com.png" />
     <None Include="Resources\png-transparent-bedroom-computer-icons-house-bed-kitchen-angle-mattress.png" />
   </ItemGroup>

@@ -43,6 +43,7 @@
             this.LstCommands = new System.Windows.Forms.ListBox();
             this.nfyi_HOTEL = new System.Windows.Forms.NotifyIcon(this.components);
             this.TmrSpeaking = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.hoteL_App2 = new WindowsFormsApp.HOTEL_App2();
             this.hoteL_App1 = new WindowsFormsApp.HOTEL_App1();
             this.hoteL_App0 = new WindowsFormsApp.HOTEL_App0();
@@ -64,21 +65,23 @@
             // frm_tblp_pnl1_HOTEL
             // 
             this.frm_tblp_pnl1_HOTEL.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.frm_tblp_pnl1_HOTEL.ColumnCount = 7;
-            this.frm_tblp_pnl1_HOTEL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.99999F));
-            this.frm_tblp_pnl1_HOTEL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.frm_tblp_pnl1_HOTEL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.frm_tblp_pnl1_HOTEL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 47F));
-            this.frm_tblp_pnl1_HOTEL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.frm_tblp_pnl1_HOTEL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 47F));
-            this.frm_tblp_pnl1_HOTEL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170F));
-            this.frm_tblp_pnl1_HOTEL.Controls.Add(this.btn_Home, 6, 0);
+            this.frm_tblp_pnl1_HOTEL.ColumnCount = 8;
+            this.frm_tblp_pnl1_HOTEL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.frm_tblp_pnl1_HOTEL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.frm_tblp_pnl1_HOTEL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.frm_tblp_pnl1_HOTEL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.frm_tblp_pnl1_HOTEL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.frm_tblp_pnl1_HOTEL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.frm_tblp_pnl1_HOTEL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.frm_tblp_pnl1_HOTEL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.frm_tblp_pnl1_HOTEL.Controls.Add(this.btn_Mic, 5, 0);
+            this.frm_tblp_pnl1_HOTEL.Controls.Add(this.button1, 6, 0);
             this.frm_tblp_pnl1_HOTEL.Controls.Add(this.btn_Custommer_Bill, 2, 0);
             this.frm_tblp_pnl1_HOTEL.Controls.Add(this.btn_Costomer_List, 1, 0);
             this.frm_tblp_pnl1_HOTEL.Controls.Add(this.btn_Costommer_Add, 0, 0);
             this.frm_tblp_pnl1_HOTEL.Controls.Add(this.txt_Search, 4, 0);
             this.frm_tblp_pnl1_HOTEL.Controls.Add(this.btn_Search, 3, 0);
+            this.frm_tblp_pnl1_HOTEL.Controls.Add(this.btn_Home, 7, 0);
             this.frm_tblp_pnl1_HOTEL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.frm_tblp_pnl1_HOTEL.Location = new System.Drawing.Point(0, 0);
             this.frm_tblp_pnl1_HOTEL.Name = "frm_tblp_pnl1_HOTEL";
@@ -94,9 +97,9 @@
             this.btn_Home.BackgroundImage = global::WindowsFormsApp.Properties.Resources.house_fill_page_1;
             this.btn_Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_Home.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Home.Location = new System.Drawing.Point(925, 3);
+            this.btn_Home.Location = new System.Drawing.Point(986, 3);
             this.btn_Home.Name = "btn_Home";
-            this.btn_Home.Size = new System.Drawing.Size(167, 41);
+            this.btn_Home.Size = new System.Drawing.Size(106, 41);
             this.btn_Home.TabIndex = 8;
             this.btn_Home.UseVisualStyleBackColor = false;
             this.btn_Home.Click += new System.EventHandler(this.btn_Home_Click);
@@ -109,7 +112,7 @@
             this.btn_Mic.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Mic.Location = new System.Drawing.Point(878, 3);
             this.btn_Mic.Name = "btn_Mic";
-            this.btn_Mic.Size = new System.Drawing.Size(41, 41);
+            this.btn_Mic.Size = new System.Drawing.Size(48, 41);
             this.btn_Mic.TabIndex = 7;
             this.btn_Mic.UseVisualStyleBackColor = false;
             this.btn_Mic.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mic_MouseDown);
@@ -120,9 +123,9 @@
             this.btn_Custommer_Bill.BackColor = System.Drawing.SystemColors.Info;
             this.btn_Custommer_Bill.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Custommer_Bill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_Custommer_Bill.Location = new System.Drawing.Point(417, 3);
+            this.btn_Custommer_Bill.Location = new System.Drawing.Point(441, 3);
             this.btn_Custommer_Bill.Name = "btn_Custommer_Bill";
-            this.btn_Custommer_Bill.Size = new System.Drawing.Size(201, 41);
+            this.btn_Custommer_Bill.Size = new System.Drawing.Size(213, 41);
             this.btn_Custommer_Bill.TabIndex = 3;
             this.btn_Custommer_Bill.Text = "Current States of Rooms";
             this.btn_Custommer_Bill.UseVisualStyleBackColor = false;
@@ -133,9 +136,9 @@
             this.btn_Costomer_List.BackColor = System.Drawing.SystemColors.Info;
             this.btn_Costomer_List.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Costomer_List.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_Costomer_List.Location = new System.Drawing.Point(210, 3);
+            this.btn_Costomer_List.Location = new System.Drawing.Point(222, 3);
             this.btn_Costomer_List.Name = "btn_Costomer_List";
-            this.btn_Costomer_List.Size = new System.Drawing.Size(201, 41);
+            this.btn_Costomer_List.Size = new System.Drawing.Size(213, 41);
             this.btn_Costomer_List.TabIndex = 2;
             this.btn_Costomer_List.Text = "List of Reservations";
             this.btn_Costomer_List.UseVisualStyleBackColor = false;
@@ -148,7 +151,7 @@
             this.btn_Costommer_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btn_Costommer_Add.Location = new System.Drawing.Point(3, 3);
             this.btn_Costommer_Add.Name = "btn_Costommer_Add";
-            this.btn_Costommer_Add.Size = new System.Drawing.Size(201, 41);
+            this.btn_Costommer_Add.Size = new System.Drawing.Size(213, 41);
             this.btn_Costommer_Add.TabIndex = 1;
             this.btn_Costommer_Add.Text = "Add Reservation";
             this.btn_Costommer_Add.UseVisualStyleBackColor = false;
@@ -159,11 +162,11 @@
             this.txt_Search.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txt_Search.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.txt_Search.Location = new System.Drawing.Point(671, 3);
+            this.txt_Search.Location = new System.Drawing.Point(714, 3);
             this.txt_Search.MaxLength = 10000;
             this.txt_Search.Multiline = true;
             this.txt_Search.Name = "txt_Search";
-            this.txt_Search.Size = new System.Drawing.Size(201, 41);
+            this.txt_Search.Size = new System.Drawing.Size(158, 41);
             this.txt_Search.TabIndex = 5;
             this.txt_Search.Text = "Only Write Orders...";
             this.txt_Search.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -174,9 +177,9 @@
             this.btn_Search.BackgroundImage = global::WindowsFormsApp.Properties.Resources.search_page_1;
             this.btn_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_Search.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Search.Location = new System.Drawing.Point(624, 3);
+            this.btn_Search.Location = new System.Drawing.Point(660, 3);
             this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(41, 41);
+            this.btn_Search.Size = new System.Drawing.Size(48, 41);
             this.btn_Search.TabIndex = 6;
             this.btn_Search.UseVisualStyleBackColor = false;
             // 
@@ -208,6 +211,20 @@
             this.nfyi_HOTEL.Icon = ((System.Drawing.Icon)(resources.GetObject("nfyi_HOTEL.Icon")));
             this.nfyi_HOTEL.Text = "HOTEL Applıcation Work";
             this.nfyi_HOTEL.Visible = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.BackgroundImage = global::WindowsFormsApp.Properties.Resources.mic_page_1;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Location = new System.Drawing.Point(932, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(48, 41);
+            this.button1.TabIndex = 8;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button1_MouseDown);
+            this.button1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button1_MouseUp);
             // 
             // hoteL_App2
             // 
@@ -285,6 +302,7 @@
         private System.Windows.Forms.Timer TmrSpeaking;
         private System.Windows.Forms.ListBox LstCommands;
         private HOTEL_App2 hoteL_App2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

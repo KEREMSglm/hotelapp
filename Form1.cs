@@ -367,5 +367,18 @@ namespace WindowsFormsApp
             }
             
         }
+
+        private void button1_MouseDown(object sender, MouseEventArgs e)
+        {
+            button1.BackColor = Color.Green;
+            SpeechEng.getInstance().start();
+        }
+
+        private void button1_MouseUp(object sender, MouseEventArgs e)
+        {
+            button1.BackColor = micBtnColor;
+            string text = SpeechEng.getInstance().stopAndGetTranscript();
+            MessageBox.Show(text);
+        }
     }
 }
