@@ -80,6 +80,7 @@
             this.Controls.Add(this.monthCalendar1);
             this.Name = "RoomCalendar";
             this.Text = "RoomCalendar";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RoomCalendar_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
