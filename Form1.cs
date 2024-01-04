@@ -18,6 +18,7 @@ using System.Threading;
 //using SpeechLib;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using SpeechLib.Models;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WindowsFormsApp
 {
@@ -328,6 +329,43 @@ namespace WindowsFormsApp
                     r.ShowDialog();
                 }
             }
+        }
+
+        private void frm_HOTEL_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control)
+            {
+                
+                switch (e.KeyCode)
+                {
+                    case Keys.ControlKey:return;
+                    case Keys.A:
+                        btn_Costommer_Add_Click(null, null);
+                        return;
+                    case Keys.L:
+                        btn_Costomer_List_Click(null, null);
+                        return;
+                    case Keys.R:
+                        btn_Costommer_Path_Click(null, null);
+                        return;
+                    default: break;
+
+                }
+
+                try {
+                    int room = e.KeyValue-48;
+                    if(room == 0) { room = 10; }
+                    RoomCalendar r = new RoomCalendar(room.ToString());
+                    r.ShowDialog();
+                } 
+                catch
+                {
+                    
+                }
+                
+
+            }
+            
         }
     }
 }
