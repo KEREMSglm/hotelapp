@@ -355,8 +355,11 @@ namespace WindowsFormsApp
                 try {
                     int room = e.KeyValue-48;
                     if(room == 0) { room = 10; }
-                    RoomCalendar r = new RoomCalendar(room.ToString());
-                    r.ShowDialog();
+                    if(room >=1 && room <= 10) {
+                        RoomCalendar r = new RoomCalendar(room.ToString());
+                        r.ShowDialog();
+                    }
+                    
                 } 
                 catch
                 {
