@@ -20,7 +20,8 @@ namespace WindowsFormsApp
         [STAThread]
         static void Main()
         {
-            string credential_path = @"C:\dev\GCP\sacred-vigil-404814-065ef29e0275.json";
+            //string credential_path = @"C:\dev\GCP\sacred-vigil-404814-065ef29e0275.json";
+            string credential_path = @"..\..\sacred-vigil-404814-065ef29e0275.json";
             System.Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", credential_path);
             
             Application.EnableVisualStyles();
